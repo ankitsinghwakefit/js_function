@@ -215,12 +215,89 @@ double(13);
  * @return {number} the result
  */
 
+function operation(sign, num1, num2){
+  if(sign == "add"){
+    return (`${num1} + ${num2} = ${num1 + num2}`);
+  }
+  else if(sign == "subtract"){
+    return (`${num1} - ${num2} = ${num1 - num2}`);
+  }
+  else if(sign == "multiply"){
+    return (`${num1} * ${num2} = ${num1 * num2}`);
+  } else if(sign == "divide") {
+    return (`${num1} / ${num2} = ${num1 / num2}`);
+  }
+}
+
+var operation = function(sign, num1, num2){
+  if(sign == "add"){
+    return (`${num1} + ${num2} = ${num1 + num2}`);
+  }
+  else if(sign == "subtract"){
+    return (`${num1} - ${num2} = ${num1 - num2}`);
+  }
+  else if(sign == "multiply"){
+    return (`${num1} * ${num2} = ${num1 * num2}`);
+  }
+  else if(sign == "divide"){
+    return (`${num1} / ${num2} = ${num1 / num2}`);
+  }
+};
+
+var operation = (sign, num1, num2) => {
+  if(sign == "add"){
+    return (`${num1} + ${num2} = ${num1 + num2}`);
+  }
+  else if(sign == "subtract"){
+    return (`${num1} - ${num2} = ${num1 - num2}`);
+  }
+  else if(sign == "multiply"){
+    return (`${num1} * ${num2} = ${num1 * num2}`);
+  }
+  else if(sign == "divide"){
+    return (`${num1} / ${num2} = ${num1 / num2}`);
+  }
+};
+
+operation("add",5,4);
+
+
+
 /**
  * Returns true if `a` is greater than `b`.
  * @param {number} a
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
+
+function comperison(num1,num2){
+  if(num1>num2){
+    return (`${num1} is larger than ${num2}`)
+  } else {
+    return (`${num2} is larger than ${num1}`)
+  }
+}
+
+var comperison = function(num1, num2) {
+  if(num1>num2){
+    return (`${num1} is larger than ${num2}`)
+  } else {
+    return (`${num2} is larger than ${num1}`)
+  }
+};
+
+var comperison = (num1,num2) => {
+  if(num1>num2){
+    return (`${num1} is larger than ${num2}`)
+  } else {
+    return (`${num2} is larger than ${num1}`)
+  }
+};
+
+var comperison = (num1,num2) => (num1>num2) ? (`${num1} is larger than ${num2}`) : (`${num2} is larger than ${num1}`);
+
+comperison(5,6);
+
 
 /**
  * Returns true if `a` is less than `b`.
@@ -229,6 +306,36 @@ double(13);
  * @return {boolean} `a` is smaller than `b`
  */
 
+function comperison(num1,num2){
+  if(num1>num2){
+    return (`${num1} is larger than ${num2}`);
+  } else {
+    return (`${num2} is larger than ${num1}`);
+  }
+}
+
+var comperison = function(num1, num2) {
+  if(num1>num2){
+    return (`${num1} is larger than ${num2}`);
+  } else {
+    return (`${num2} is larger than ${num1}`);
+  }
+};
+
+var comperison = (num1,num2) => {
+  if(num1>num2){
+    return (`${num1} is larger than ${num2}`);
+  } else {
+    return (`${num2} is larger than ${num1}`);
+  }
+};
+
+var comperison = (num1,num2) => (num1>num2) ? (`${num1} is larger than ${num2}`) : (`${num2} is larger than ${num1}`);
+
+comperison(5,6);
+
+
+ 
 /**
  * Returns true if `a` and `b` are equal.
  * @param {number} a
@@ -236,12 +343,69 @@ double(13);
  * @return {boolean} the numbers are equal
  */
 
+function comperison(num1,num2){
+  if(num1 == num2){
+    return (`the numbers are equal`);
+  } else {
+    return (`the numbers are not equal`)
+  }
+}
+
+var comperison = function(num1,num2){
+  if(num1 == num2){
+    return (`the numbers are equal`);
+  } else {
+    return (`the numbers are not equal`)
+  }
+};
+
+var comperison = (num1,num2) =>{
+  if(num1 == num2){
+    return (`the numbers are equal`);
+  } else {
+    return (`the numbers are not equal`)
+  }
+};
+
+var comperison = (num1,num2) => (num1 == num2) ? (`the numbers are equal`) : (`the numbers are not equal`);
+
+comperison(5,5);
+
+
 /**
  * Returns the smallest value of two numbers.
  * @param {number} x
  * @param {number} y
  * @return {number} the smallest number
  */
+function small(num1,num2){
+  if(num1 > num2){
+    return (`${num2}is the smallest number`);
+  } else {
+    return (`${num1}is the smallest number`);
+  }
+}
+
+var small = function(num1,num2){
+  if(num1 > num2){
+    return (`${num2}is the smallest number`);
+  } else {
+    return (`${num1}is the smallest number`);
+  }
+};
+
+var small = (num1,num2) => (num1 > num2) ? (`${num2}is the smallest number`) : (`${num1}is the smallest number`);
+
+var small = (num1,num2) => {
+  if(num1 > num2){
+    return (`${num2}is the smallest number`);
+  } else {
+    return (`${num1}is the smallest number`);
+  }
+};
+
+small(4,5);
+
 
 /**
  * Returns the largest value of two numbers.
@@ -249,18 +413,104 @@ double(13);
  * @param {number} y
  * @return {number} the largest number
  */
+function large(num1,num2){
+  if(num1 > num2){
+    return (`${num1}is the largest number`);
+  } else {
+    return (`${num2}is the largest number`);
+  }
+}
+
+var large = function(num1,num2){
+  if(num1 > num2){
+    return (`${num1}is the largest number`);
+  } else {
+    return (`${num2}is the largest number`);
+  }
+};
+
+var large = (num1,num2) => {
+  if(num1 > num2){
+    return (`${num1}is the largest number`);
+  } else {
+    return (`${num2}is the largest number`);
+  }
+};
+
+var large = (num1,num2) => (num1 > num2) ? (`${num1}is the largest number`) : (`${num2}is the largest number`);
+
+large(5,10);
+
+
+
 
 /**
  * Returns true if `n` is even.
  * @param {number} n
  * @return {boolean} the number is even
  */
+function isEven(num1){
+  if(num1%2==0){
+    return (`${num1} is even number`);
+  }else {
+    return (`${num1} is not even number`);
+  }
+}
+
+var isEven = function(num1){
+  if(num1%2==0){
+    return (`${num1} is even number`);
+  }else {
+    return (`${num1} is not even number`);
+  }
+};
+
+var isEven = (num1) => {
+  if(num1%2==0){
+    return (`${num1} is even number`);
+  }else {
+    return (`${num1} is not even number`);
+  }
+};
+
+var isEven = (num1) => (num1%2==0) ? (`${num1} is even number`) : (`${num1} is not even number`);
+ 
+isEven(7);
+
+
+
 
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
+function isOdd(num1){
+  if(num1%2!=0){
+    return (`${num1} is odd number`);
+    return (`${num1} is not odd number`);
+  }
+}
+
+var isOdd = function(num1){
+  if(num1%2!=0){
+    return (`${num1} is odd number`);
+    return (`${num1} is not odd number`);
+  }
+}
+
+var isOdd = (num1) => (num1%2!=0) ? (`${num1} is odd number`) : (`${num1} is not odd number`);
+
+var isOdd = (num1) => {
+  if(num1%2!=0){
+    return (`${num1} is odd number`);
+    return (`${num1} is not odd number`);
+  }
+}
+
+isOdd(5);
+
+
 
 /**
  * Returns a letter grade.
@@ -274,9 +524,86 @@ double(13);
  * @return {string} the score represented as a letter grade
  */
 
+function grade(score,total){
+  var percent = (score/total)*100;
+  if(percent>=90){
+    return "A";
+  }
+  else if(percent>=80){
+    return "B";
+  }
+  else if(percent>=70){
+    return "C";
+  }
+  else if(percent>=60){
+    return "D";
+  }
+  else if(percent<=59){
+    return "F";
+  }
+}
+
+var grade = function(score,total){
+  var percent = (score/total)*100;
+  if(percent>=90){
+    return "A";
+  }
+  else if(percent>=80){
+    return "B";
+  }
+  else if(percent>=70){
+    return "C";
+  }
+  else if(percent>=60){
+    return "D";
+  }
+  else if(percent<=59){
+    return "F";
+  }
+};
+
+var grade = (score,total) => {
+  var percent = (score/total)*100;
+  if(percent>=90){
+    return "A";
+  }
+  else if(percent>=80){
+    return "B";
+  }
+  else if(percent>=70){
+    return "C";
+  }
+  else if(percent>=60){
+    return "D";
+  }
+  else if(percent<=59){
+    return "F";
+  }
+};
+
+grade(95,100);
+
+
+
 /**
  * Joins two strings with a space.
  * @param {string} word1
  * @param {string} word2
  * @return {string} joined the words joined with a space
  */
+
+function join(word1,word2){
+  return(`${word1} ${word2}`);
+}
+join("an","kit");
+
+var join = function(word1,word2) {
+  return(`${word1} ${word2}`);
+}
+
+var join = (word1,word2) => (`${word1} ${word2}`);
+
+var join = (word1,word2) => {
+  return(`${word1} ${word2}`);
+}
+join("an","kit");
