@@ -43,11 +43,44 @@ convertToString(21); // "21"
  * @return {number}
  */
 
+function addOne(n) {
+  return n+1;
+}
+
+var addOne = function(n) {
+  return n+1;
+};
+
+var addOne = n => n+1;
+
+var addOne = n => {
+  return n+1;
+};
+
+addOne(5);
+
 /**
  * Subtracts one from a given number.
  * @param {number} n
  * @return {number}
  */
+
+function subOne(n) {
+  return n-1;
+}
+
+var subOne = function(n) {
+  return n-1;
+};
+
+var subOne = n => n-1;
+
+var subOne = n => {
+  return n-1;
+};
+
+subOne(8);
+
 
 /**
  * Adds two numbers.
@@ -56,12 +89,47 @@ convertToString(21); // "21"
  * @return {number} the sum
  */
 
+function sum(x, y) {
+  return x+y;
+}
+
+var sum = function(x, y) {
+  return x+y;
+};
+
+var sum = (x,y) => x+y;
+
+var sum = (x, y) => {
+  return x+y;
+};
+
+sum(5,8);
+
+
 /**
  * Subtracts the second number from the first.
  * @param {number} x
  * @param {number} y
  * @return {number} the difference
  */
+
+function sub(x, y) {
+  return x-y;
+}
+
+var sub = function(x, y) {
+  return x-y;
+};
+
+var sub = (x,y) => x-y;
+
+var sub = (x, y) => {
+  return x-y;
+};
+
+sub(10,6);
+
+
 
 /**
  * Multiplies two numbers.
@@ -70,6 +138,24 @@ convertToString(21); // "21"
  * @return {number} the product
  */
 
+function mul(x, y) {
+  return x*y;
+}
+
+var mul = function(x, y) {
+  return x*y;
+};
+
+var mul = (x,y) => x*y;
+
+var mul = (x, y) => {
+  return x*y;
+};
+
+mul(10,6);
+
+
+
 /**
  * Divides the first number by the second.
  * @param {number} x
@@ -77,11 +163,48 @@ convertToString(21); // "21"
  * @return {number} the quotient
  */
 
+function div(x, y) {
+  return x/y;
+}
+
+var div = function(x, y) {
+  return x/y;
+};
+
+var div = (x,y) => x/y;
+
+var div = (x, y) => {
+  return x/y;
+};
+
+div(10,6);
+
+
+
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
  * @return {number} squared
  */
+
+function double(x) {
+  return x*x;
+}
+
+var double = function(x) {
+  return x*x;
+};
+
+var double = (x) => x*x;
+
+var double = (x) => {
+  return x*x;
+};
+
+double(13);
+
+
+
 
 /**
  * Performs a mathematical operation on two numbers.
